@@ -2,6 +2,7 @@ package yte.obs_demo_proje_v2.demo_obs_2.academician.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import yte.obs_demo_proje_v2.demo_obs_2.assistant.entity.Assistant;
 import yte.obs_demo_proje_v2.demo_obs_2.common.entity.BaseEntity;
 import yte.obs_demo_proje_v2.demo_obs_2.lesson.entity.Lesson;
@@ -13,6 +14,7 @@ import java.util.Set;
 
 @Entity
 @Getter
+@Setter
 @NoArgsConstructor
 public class Academician extends BaseEntity {
 
@@ -35,11 +37,12 @@ public class Academician extends BaseEntity {
         this.password = updateAcademician.password;
     }
 
-    @OneToMany(mappedBy = "academician",cascade=CascadeType.ALL)
+    @OneToMany(mappedBy = "academician")
     private Set<Lesson> lessons= new HashSet<>();
 
-    //@OneToMany(mappedBy = "academician",cascade=CascadeType.ALL)
-    //private  Set<Assistant> assistants =new HashSet<>();
+    @OneToMany(mappedBy = "academician",cascade=CascadeType.ALL)
+    private Set<Assistant> assistants= new HashSet<>();
+
 
     @ManyToMany(cascade=CascadeType.ALL)
     @JoinColumn(name = "student_id")

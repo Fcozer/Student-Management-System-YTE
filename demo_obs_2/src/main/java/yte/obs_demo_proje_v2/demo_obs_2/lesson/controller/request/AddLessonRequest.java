@@ -12,12 +12,14 @@ public record AddLessonRequest(
         String lessonName,
 
 
-        @NotBlank
-        LocalTime timeSlot
+        LocalTime timeSlot,
+
+
+        Long academicianId
 ) {
 
     public Lesson toDomainEntity() {
-        return new Lesson(lessonName,timeSlot);
+        return new Lesson(lessonName,timeSlot,academicianId);
     }
 
 

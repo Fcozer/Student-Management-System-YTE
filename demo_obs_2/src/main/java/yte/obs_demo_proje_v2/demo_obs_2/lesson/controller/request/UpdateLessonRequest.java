@@ -7,9 +7,11 @@ import java.time.LocalTime;
 
 public record UpdateLessonRequest(
         String lessonName,
-        LocalTime timeSlot
+        LocalTime timeSlot,
+
+        Long academicianId
 ) {
     public Lesson toDomainEntity() {
-        return new Lesson(lessonName,timeSlot);
+        return new Lesson(lessonName,timeSlot, academicianId);
     }
 }

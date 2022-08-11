@@ -2,6 +2,8 @@ package yte.obs_demo_proje_v2.demo_obs_2.lesson.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import yte.obs_demo_proje_v2.demo_obs_2.academician.entity.Academician;
+import yte.obs_demo_proje_v2.demo_obs_2.academician.service.AcademicianService;
 import yte.obs_demo_proje_v2.demo_obs_2.common.response.MessageResponse;
 import yte.obs_demo_proje_v2.demo_obs_2.common.response.ResponseType;
 
@@ -19,8 +21,12 @@ import java.util.List;
 public class LessonService {
 
     private final LessonRepository LessonRepository;
+    private final AcademicianService academicianService;
 
     public MessageResponse addLesson(Lesson lesson) {
+        Academician academician = academicianService.getById(lesson.getAcademician().getId());
+        lesson.setAcademician(academician);
+
         LessonRepository.save(lesson);
 
         return new MessageResponse(ResponseType.SUCCESS, "Lesson has been added successfully");
@@ -43,6 +49,10 @@ public class LessonService {
     public MessageResponse updateLesson(Long id, Lesson updatedLesson) {
         Lesson Lesson = LessonRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Lesson not found"));
+
+
+        Academician academician = academicianService.getById(updatedLesson.getAcademician().getId());
+        updatedLesson.setAcademician(academician);
 
         Lesson.update(updatedLesson);
 

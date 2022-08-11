@@ -44,8 +44,9 @@ public class Assistant extends BaseEntity {
         this.password = updateAssistant.password;
     }
 
-    @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "academician_id")
-    private Academician academicians;
+
+    @ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
+    @JoinColumn(name="academician_id",referencedColumnName = "ID")
+    private Academician academician;
 }
 
