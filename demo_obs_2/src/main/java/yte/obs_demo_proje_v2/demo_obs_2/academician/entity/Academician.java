@@ -34,17 +34,11 @@ public class Academician extends BaseEntity {
     public void update(Academician updateAcademician) {
         this.name = updateAcademician.name;
         this.surname = updateAcademician.surname;
+        this.username=updateAcademician.username;
         this.password = updateAcademician.password;
     }
 
-    @OneToMany(mappedBy = "academician")
+    @OneToMany(mappedBy = "academician",cascade=CascadeType.ALL)
     private Set<Lesson> lessons= new HashSet<>();
 
-    @OneToMany(mappedBy = "academician",cascade=CascadeType.ALL)
-    private Set<Assistant> assistants= new HashSet<>();
-
-
-    @ManyToMany(cascade=CascadeType.ALL)
-    @JoinColumn(name = "student_id")
-    private Set<Student> students= new HashSet<>();
 }

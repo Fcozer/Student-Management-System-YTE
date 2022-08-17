@@ -4,30 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfb5e34-f6f3-4deb-8223-57fc63497488" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/frontend/src/ListStudents/ListStudents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ddfb5e34-f6f3-4deb-8223-57fc63497488" name="Changes" comment="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/ExamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/AddExamRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/UpdateExamRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/response/ExamQueryModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/entity/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/repository/ExamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/service/ExamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/AcademicianNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/AcademicianPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/ExamEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/ExamList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AcademicianEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AcademicianList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AssistantEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AssistantList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/LessonEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/LessonList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/StudentEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/StudentList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AppNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Css/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/service/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/service/LessonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/ListStudents/ListStudents.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,27 +76,29 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
         <option value="Record" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <excluded-from-favorite>
+    <favorite-branches>
       <branch-storage>
         <map>
           <entry type="LOCAL">
             <value>
               <list>
-                <branch-info repo="$PROJECT_DIR$/frontend" source="master" />
+                <branch-info repo="$PROJECT_DIR$" source="main" />
               </list>
             </value>
           </entry>
         </map>
       </branch-storage>
-    </excluded-from-favorite>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,30 +111,46 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2D7fSBpFVVtQlSsTygGZ43TqM4Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/furkan.ozer/Desktop/SpringDemoAppPublic-main&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9cd3c586a12316053264c5b952aec97a&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/furkan.ozer/Desktop/security_proje-main",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "9cd3c586a12316053264c5b952aec97a",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\AcademicianPage" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\views\admin" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\views\admin\AddStudent" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.DemoObs2Application">
     <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/src/App.js" working-dir="$PROJECT_DIR$/frontend/src">
       <method v="2" />
@@ -129,7 +185,17 @@
       <workItem from="1660151964488" duration="1160000" />
       <workItem from="1660153142206" duration="542000" />
       <workItem from="1660153756493" duration="5424000" />
-      <workItem from="1660206133984" duration="6451000" />
+      <workItem from="1660206133984" duration="9373000" />
+      <workItem from="1660244755832" duration="1056000" />
+      <workItem from="1660286681563" duration="20108000" />
+      <workItem from="1660404803587" duration="3592000" />
+      <workItem from="1660493224540" duration="9934000" />
+      <workItem from="1660546002837" duration="17773000" />
+      <workItem from="1660628832910" duration="13691000" />
+      <workItem from="1660651809929" duration="9395000" />
+      <workItem from="1660674098657" duration="5198000" />
+      <workItem from="1660717915998" duration="18751000" />
+      <workItem from="1660753951354" duration="7733000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660133938009</created>
@@ -138,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660133938009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi">
+      <created>1660221744956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660221744956</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi">
+      <created>1660222022889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660222022889</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +229,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="d64ea814-8a26-4231-b075-a1cd4287e6be">
@@ -184,9 +276,30 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi" />
   </component>
 </project>

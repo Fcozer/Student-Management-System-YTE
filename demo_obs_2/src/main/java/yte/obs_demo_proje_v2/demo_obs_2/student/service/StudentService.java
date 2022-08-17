@@ -3,6 +3,7 @@ package yte.obs_demo_proje_v2.demo_obs_2.student.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
 import yte.obs_demo_proje_v2.demo_obs_2.common.response.MessageResponse;
 import yte.obs_demo_proje_v2.demo_obs_2.common.response.ResponseType;
 import yte.obs_demo_proje_v2.demo_obs_2.student.entity.Student;
@@ -17,7 +18,11 @@ public class StudentService {
 
     private final StudentRepository studentRepository;
 
+
+
     public MessageResponse addStudent(Student student) {
+
+
         studentRepository.save(student);
 
         return new MessageResponse(ResponseType.SUCCESS, "Student has been added successfully");

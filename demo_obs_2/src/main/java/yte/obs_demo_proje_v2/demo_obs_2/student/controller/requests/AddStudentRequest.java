@@ -21,6 +21,7 @@ public record AddStudentRequest(
 
 
         String password
+
 ) {
         public Student toDomainEntity() {
                 return new Student(name, surname, email, username, password);

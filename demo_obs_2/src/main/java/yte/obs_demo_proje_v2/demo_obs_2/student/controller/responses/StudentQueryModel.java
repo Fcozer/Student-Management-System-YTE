@@ -9,6 +9,7 @@ public record StudentQueryModel(
         String email,
         String username,
         String password
+
 ) {
 
     public StudentQueryModel(Student student) {
@@ -19,6 +20,7 @@ public record StudentQueryModel(
                 student.getEmail(),
                 student.getUsername(),
                 student.getPassword()
+
         );
     }
 }

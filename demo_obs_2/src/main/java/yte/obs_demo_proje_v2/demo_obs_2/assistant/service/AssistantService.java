@@ -22,17 +22,17 @@ public class AssistantService {
     public MessageResponse addAssistant(Assistant assistant) {
         assistantRepository.save(assistant);
 
-        return new MessageResponse(ResponseType.SUCCESS, "Asistan başarıyla kaydedildi");
+        return new MessageResponse(ResponseType.SUCCESS, "Assistant  has been added successfully");
     }
 
     public MessageResponse updateAssistant(Long id, Assistant updateAssistant) {
         Assistant assistant = assistantRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Kayıt bulunamadı"));
+                .orElseThrow(() -> new EntityNotFoundException("Assistant not found"));
         assistant.update(updateAssistant);
 
         assistantRepository.save(assistant);
 
-        return new MessageResponse(ResponseType.SUCCESS, "Asistan başarıyla güncellendi");
+        return new MessageResponse(ResponseType.SUCCESS, "Assistant has been updated successfully");
     }
 
 
@@ -42,12 +42,12 @@ public class AssistantService {
 
     public Assistant getById(Long id) {
         return assistantRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Kayıt bulunamadı"));
+                .orElseThrow(() -> new EntityNotFoundException("Assistant not found"));
     }
 
     public MessageResponse deleteAssistantById(Long id){
         assistantRepository.deleteById(id);
-        return  new MessageResponse(ResponseType.SUCCESS, "Asistan başarıyla silindi");
+        return  new MessageResponse(ResponseType.SUCCESS, "Assistant has been deleted successfully");
     }
 }
 

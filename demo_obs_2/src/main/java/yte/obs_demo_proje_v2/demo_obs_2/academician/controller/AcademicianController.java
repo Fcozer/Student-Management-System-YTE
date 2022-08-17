@@ -21,7 +21,7 @@ public class AcademicianController {
 
     private final AcademicianService academicianService;
 
-
+//@RequestBody HTTP isteği gönderiyor.
     @PostMapping
     public MessageResponse addAcademician(@Valid @RequestBody AddAcademicianRequest addAcademicianRequest) {
         return academicianService.addAcademician(addAcademicianRequest.toDomainEntity());
@@ -42,7 +42,7 @@ public class AcademicianController {
     public List<AcademicianQueryModel> getAllAcademician() {
         return academicianService.getAllAcademician()
                 .stream()
-                .map(academician -> new AcademicianQueryModel(academician))
+                .map(AcademicianQueryModel::new)
                 .toList();
     }
 

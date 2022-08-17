@@ -20,7 +20,7 @@ public class AcademicianService {
     public MessageResponse addAcademician(Academician academician) {
         academicianRepository.save(academician);
 
-        return new MessageResponse(ResponseType.SUCCESS, "Akademisyen başarıyla eklendi");
+        return new MessageResponse(ResponseType.SUCCESS, "Academician has been added successfully");
     }
 
     public List<Academician> getAllAcademician() {
@@ -30,26 +30,26 @@ public class AcademicianService {
     public Academician getById(Long id) {
 
         return academicianRepository.findById(id)
-                .orElseThrow(() -> (new EntityNotFoundException("Akademisyen bulunamadı")));
+                .orElseThrow(() -> (new EntityNotFoundException("Academician not found")));
 
     }
 
     public MessageResponse updateAcademician(Long id, Academician updateAcademician) {
 
         Academician academician = academicianRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Akademisyen bulunamadı"));
+                .orElseThrow(() -> new EntityNotFoundException("Academician not found"));
 
         academician.update(updateAcademician);
 
         academicianRepository.save(academician);
 
-        return new MessageResponse(ResponseType.SUCCESS, "Akademisyen başarıyla güncellendi");
+        return new MessageResponse(ResponseType.SUCCESS, "Academician has been updated successfully");
 
     }
 
     public MessageResponse deleteAcademician(Long id) {
         academicianRepository.deleteById(id);
-        return new MessageResponse(ResponseType.SUCCESS, "Akademisyen başarıyla silindi");
+        return new MessageResponse(ResponseType.SUCCESS, "Academician has been delete successfully");
 
 
     }

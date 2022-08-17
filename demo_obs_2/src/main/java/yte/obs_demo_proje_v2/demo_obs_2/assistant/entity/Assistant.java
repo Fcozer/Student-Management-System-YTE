@@ -23,9 +23,6 @@ public class Assistant extends BaseEntity {
     private String password;
 
 
-    //@ManyToMany
-    //@JoinColumn(name = "student_id")
-    //private Set<Book> books = new HashSet<>();
 
 
     public Assistant() {
@@ -41,12 +38,11 @@ public class Assistant extends BaseEntity {
     public void update(Assistant updateAssistant) {
         this.name = updateAssistant.name;
         this.surname = updateAssistant.surname;
+        this.username=updateAssistant.username;
         this.password = updateAssistant.password;
     }
 
 
-    @ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
-    @JoinColumn(name="academician_id",referencedColumnName = "ID")
-    private Academician academician;
+
 }
 
