@@ -1,2 +1,2 @@
 # Student-Management-System-YTE
-Java Spring Boot, React, Bootstrap ve PostgreSQL kullanarak Öğrenci Yönetim Sistemi web uygulamasını oluşturdum.
+I created the Student Management System web application using Java Spring Boot, React, Bootstrap and PostgreSQL.
