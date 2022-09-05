@@ -4,68 +4,139 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfb5e34-f6f3-4deb-8223-57fc63497488" name="Changes" comment="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/ExamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/AddExamRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/UpdateExamRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/response/ExamQueryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/entity/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/repository/ExamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/service/ExamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/AcademicianNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/AcademicianPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/ExamEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AcademicianPage/ExamList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AcademicianEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AcademicianList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AssistantEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/AssistantList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/LessonEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/LessonList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/StudentEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AdminPage/StudentList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/AppNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Css/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+    <list default="true" id="ddfb5e34-f6f3-4deb-8223-57fc63497488" name="Changes" comment="Spring Security eklendi ve Frontend düzenlendi">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/common/response/SecurityRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/AuthenticationProviderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/PasswordEncoderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/UserTablePopulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/controller/requests/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/repository/AuthorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/common/response/SecurityRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/ExamController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/AddExamRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/request/UpdateExamRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/response/ExamQueryModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/entity/Exam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/repository/ExamRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/exam/service/ExamService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/CustomAuthenticationProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/AuthenticationProviderConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/PasswordEncoderConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/SecurityConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/UserTablePopulator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/controller/requests/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/entity/Authority.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/entity/Users.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/repository/AuthorityRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/service/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/security/service/LoginService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/LoginApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/SetupProxy.js.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/academician/Academician.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/admin/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/assistant/Assistant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/academicians/AcademicianView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/academicians/AddAcademician/AddAcademician.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/academicians/Api/AcademicianViewApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/assistants/AddAssistant/AddAssistant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/assistants/Api/AssistantViewApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/assistants/AssistantView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/lessons/AddLesson/AddLesson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/lessons/Api/LessonViewApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/lessons/LessonView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/lessons/ListLesson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/students/AddStudent/AddStudent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/students/Api/StudentViewApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/components/students/StudentView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obs/src/students/Student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/demo_obs_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/demo_obs_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/repository/AcademicianRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/repository/AcademicianRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/repository/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/repository/AdminRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/admin/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/controller/AssistantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/controller/AssistantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/repository/AssistantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/repository/AssistantRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/ExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/response/ExamQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/controller/response/ExamQueryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/entity/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/entity/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/service/ExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/exam/service/ExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/LessonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/repository/LessonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/repository/LessonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/entity/Academician.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/repository/AcademicianRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/repository/AcademicianRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/academician/service/AcademicianService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/entity/Assistant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/service/AssistantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/admin/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/controller/AssistantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/controller/AssistantController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/repository/AssistantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/assistant/repository/AssistantRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/common/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/LessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/LessonController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/AddLessonRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/request/UpdateLessonRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/response/LessonQueryModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/lesson/entity/Lesson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/requests/AddStudentRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/responses/StudentQueryModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/ListStudents/ListStudents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo_obs_2/target/classes/yte/obs_demo_proje_v2/demo_obs_2/student/repository/StudentRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +146,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="Record" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -98,8 +170,16 @@
         </map>
       </branch-storage>
     </favorite-branches>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.22/spring-web-5.3.22.jar!/org/springframework/web/bind/annotation/GetMapping.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/academician/controller/AcademicianController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/assistant/controller/AssistantController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/lesson/controller/LessonController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/configuration/UserTablePopulator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/student/controller/StudentController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -122,33 +202,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/furkan.ozer/Desktop/security_proje-main",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "9cd3c586a12316053264c5b952aec97a",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/furkan.ozer/Desktop/projectserenay&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9cd3c586a12316053264c5b952aec97a&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src" />
-      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\AcademicianPage" />
-      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\views\admin" />
-      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\frontend\src\views\admin\AddStudent" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\obs\src\components\assistants\Api" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\obs\src\components\lessons\Api" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\obs\src\components\lessons\AddLesson" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\obs\src\components\students\Api" />
+      <recent name="C:\Users\furkan.ozer\Desktop\SpringDemoAppPublic-main\obs\src\components\students\AddStudent" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoObs2Application">
@@ -195,7 +277,22 @@
       <workItem from="1660651809929" duration="9395000" />
       <workItem from="1660674098657" duration="5198000" />
       <workItem from="1660717915998" duration="18751000" />
-      <workItem from="1660753951354" duration="7733000" />
+      <workItem from="1660753951354" duration="9817000" />
+      <workItem from="1660802283587" duration="4894000" />
+      <workItem from="1661156235475" duration="3743000" />
+      <workItem from="1661168221616" duration="4457000" />
+      <workItem from="1661233638396" duration="11769000" />
+      <workItem from="1661406283757" duration="17075000" />
+      <workItem from="1661767875040" duration="2981000" />
+      <workItem from="1661843915858" duration="5048000" />
+      <workItem from="1661853160590" duration="229000" />
+      <workItem from="1661931322400" duration="15295000" />
+      <workItem from="1662012635620" duration="2027000" />
+      <workItem from="1662014805835" duration="15851000" />
+      <workItem from="1662106972919" duration="1937000" />
+      <workItem from="1662116960982" duration="135000" />
+      <workItem from="1662117237227" duration="5399000" />
+      <workItem from="1662360215834" duration="14904000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660133938009</created>
@@ -218,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660222022889</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Login,Academician ve Admin Page oluşturuldu.">
+      <created>1660766603508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660766603508</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +339,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -300,6 +404,44 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson ve Academician arasında onetomany ilişkiler kuruldu. Setter annotation eklendi academicianId set edildi" />
+    <MESSAGE value="Login,Academician ve Admin Page oluşturuldu." />
+    <MESSAGE value="Spring Security eklendi ve Frontend düzenlendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Security eklendi ve Frontend düzenlendi" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/service/LoginService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/AuthenticationService.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/CustomAuthenticationProvider.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo_obs_2/src/main/java/yte/obs_demo_proje_v2/demo_obs_2/security/CustomUserDetailsService.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

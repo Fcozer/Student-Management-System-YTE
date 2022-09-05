@@ -2,6 +2,7 @@ package yte.obs_demo_proje_v2.demo_obs_2.academician.service;
 
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import yte.obs_demo_proje_v2.demo_obs_2.academician.entity.Academician;
 import yte.obs_demo_proje_v2.demo_obs_2.academician.repository.AcademicianRepository;
@@ -15,7 +16,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AcademicianService {
 
+
     private final AcademicianRepository academicianRepository;
+
+
 
     public MessageResponse addAcademician(Academician academician) {
         academicianRepository.save(academician);

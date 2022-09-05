@@ -8,8 +8,7 @@ import java.time.LocalTime;
 public record LessonQueryModel(
         Long id,
         String lessonName,
-        LocalTime startTimeSlot,
-        LocalTime endTimeSlot,
+        String timeSlot,
         Long academicianId
 ) {
 
@@ -17,8 +16,7 @@ public record LessonQueryModel(
         this(
                 lesson.getId(),
                 lesson.getLessonName(),
-                lesson.getStartTimeSlot(),
-                lesson.getEndTimeSlot(),
+                lesson.getTimeSlot(),
                 lesson.getAcademician().getId()
 
         );

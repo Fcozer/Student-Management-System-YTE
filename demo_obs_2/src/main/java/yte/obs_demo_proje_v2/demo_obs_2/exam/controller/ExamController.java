@@ -1,6 +1,7 @@
 package yte.obs_demo_proje_v2.demo_obs_2.exam.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import yte.obs_demo_proje_v2.demo_obs_2.common.entity.BaseEntity;
@@ -27,11 +28,13 @@ public class ExamController extends BaseEntity {
 
 
     @PostMapping
+    @PreAuthorize("hasAnyAuthority('ACADEMICIAN','ASSISTANT')")
     public MessageResponse addExam(@Valid @RequestBody AddExamRequest addExamRequest) {
         return ExamService.addExam(addExamRequest.toDomainEntity());
     }
 
     @GetMapping
+    @PreAuthorize("hasAnyAuthority('STUDENT','ACADEMICIAN','ASSISTANT')")
     public List<ExamQueryModel> getAllExams() {
         return ExamService.getAllExams()
                 .stream()
@@ -41,17 +44,19 @@ public class ExamController extends BaseEntity {
 
 
     @GetMapping("/{id}")
-
+    @PreAuthorize("hasAnyAuthority('STUDENT','ACADEMICIAN','ASSISTANT')")
     public ExamQueryModel getById(@NotNull @PathVariable Long id) {
         return new ExamQueryModel(ExamService.getById(id));
     }
 
-    @DeleteMapping("/{id}")
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    @PreAuthorize("hasAnyAuthority('ACADEMICIAN','ASSISTANT')")
     public MessageResponse deleteExamById(@PathVariable @NotNull Long id) {
         return ExamService.deleteExamById(id);
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasAnyAuthority('ACADEMICIAN','ASSISTANT')")
     public MessageResponse updateExam(@Valid @RequestBody UpdateExamRequest request, @PathVariable Long id) {
         return ExamService.updateExam(id, request.toDomainEntity());
     }

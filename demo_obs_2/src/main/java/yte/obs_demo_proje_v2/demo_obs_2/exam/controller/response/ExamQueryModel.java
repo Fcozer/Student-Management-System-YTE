@@ -9,8 +9,8 @@ public record ExamQueryModel(
         Long id,
         String examClass,
         LocalTime startTimeSlot,
-        LocalTime endTimeSlot,
-        Long lessonId
+        LocalTime endTimeSlot
+
 ) {
 
     public ExamQueryModel(Exam exam) {
@@ -18,8 +18,8 @@ public record ExamQueryModel(
                 exam.getId(),
                 exam.getExamClass(),
                 exam.getStartTimeSlot(),
-                exam.getEndTimeSlot(),
-                exam.getLesson().getId()
+                exam.getEndTimeSlot()
+
 
         );
     }

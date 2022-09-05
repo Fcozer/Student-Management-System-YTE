@@ -21,15 +21,14 @@ public class Lesson extends BaseEntity {
 
 
     private String lessonName;
-    private LocalTime startTimeSlot;
-    private LocalTime endTimeSlot;
+    private String timeSlot;
 
 
 
-    public Lesson(String lessonName, LocalTime startTimeSlot,LocalTime endTimeSlot, Long academicianId) {
+
+    public Lesson(String lessonName,String timeSlot, Long academicianId) {
         this.lessonName = lessonName;
-        this.startTimeSlot =startTimeSlot;
-        this.endTimeSlot=endTimeSlot;
+        this.timeSlot=timeSlot;
 
         this.academician = new Academician();
         this.academician.setId(academicianId);
@@ -38,19 +37,15 @@ public class Lesson extends BaseEntity {
     public void update(Lesson updatedLesson) {
 
         this.lessonName=updatedLesson.lessonName;
-        this.startTimeSlot=updatedLesson.startTimeSlot;
-        this.endTimeSlot=updatedLesson.endTimeSlot;
-
+        this.timeSlot= updatedLesson.timeSlot;
         this.academician = updatedLesson.academician;
     }
-    @ManyToMany(cascade=CascadeType.ALL)
-    private Set<Student> students= new HashSet<>();
+
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Academician academician;
 
-    @OneToMany(mappedBy = "lesson",cascade=CascadeType.ALL)
-    private Set<Exam> exams= new HashSet<>();
+
 
 
 }

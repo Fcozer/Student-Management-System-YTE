@@ -27,8 +27,7 @@ public class Exam extends BaseEntity{
             this.startTimeSlot =startTimeSlot;
             this.endTimeSlot=endTimeSlot;
 
-            this.lesson = new Lesson();
-            this.lesson.setId(lessonId);
+
         }
 
         public void update(Exam updatedExam) {
@@ -37,10 +36,8 @@ public class Exam extends BaseEntity{
             this.startTimeSlot=updatedExam.startTimeSlot;
             this.endTimeSlot=updatedExam.endTimeSlot;
 
-            this.lesson = updatedExam.lesson;
         }
-        @ManyToOne(fetch = FetchType.LAZY)
-        private Lesson lesson;
+
 
 
     }

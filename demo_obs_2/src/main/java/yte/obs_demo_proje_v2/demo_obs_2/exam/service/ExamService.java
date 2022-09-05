@@ -24,8 +24,7 @@ public class ExamService {
     private final LessonService lessonService;
 
     public MessageResponse addExam(Exam exam) {
-        Lesson lesson = lessonService.getById(exam.getLesson().getId());
-        exam.setLesson(lesson);
+
 
         ExamRepository.save(exam);
 
@@ -51,8 +50,6 @@ public class ExamService {
                 .orElseThrow(() -> new EntityNotFoundException("Exam not found"));
 
 
-        Lesson lesson = lessonService.getById(updatedExam.getLesson().getId());
-        updatedExam.setLesson(lesson);
 
         Exam.update(updatedExam);
 

@@ -9,15 +9,13 @@ public record AddLessonRequest(
 
         String lessonName,
 
-        LocalTime startTimeSlot,
-
-        LocalTime endTimeSlot,
+        String timeSlot,
 
         Long academicianId
 ) {
 
     public Lesson toDomainEntity() {
-        return new Lesson(lessonName,startTimeSlot,endTimeSlot,academicianId);
+        return new Lesson(lessonName,timeSlot,academicianId);
     }
 
 

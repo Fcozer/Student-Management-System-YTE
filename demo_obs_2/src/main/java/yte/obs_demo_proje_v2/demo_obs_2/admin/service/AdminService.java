@@ -50,11 +50,6 @@ public class AdminService {
         return adminRepository.findById(id)
                 .orElseThrow(()->new EntityNotFoundException("kayıt bulunamadı"));
     }
-    @GetMapping("{id}")
-    public Admin getById(@PathVariable Long id) {
-        return adminRepository.findById(id)
-                .orElseThrow(()->new EntityNotFoundException("kayıt bulunamadı"));
 
-    }
 
 }

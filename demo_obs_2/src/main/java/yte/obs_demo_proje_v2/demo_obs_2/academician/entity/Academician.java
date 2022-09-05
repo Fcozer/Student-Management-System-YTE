@@ -31,6 +31,8 @@ public class Academician extends BaseEntity {
         this.password = password;
     }
 
+
+
     public void update(Academician updateAcademician) {
         this.name = updateAcademician.name;
         this.surname = updateAcademician.surname;
